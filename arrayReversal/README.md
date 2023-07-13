@@ -1,11 +1,15 @@
 # Challenge 01: Array Reverse
-Reverse the input of an array
+
+Write a function called reverseArray which takes an array as an argument. Without utilizing any of the built-in methods available to your language, return an array with elements in reversed order.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
+
+![revArray Whiteboard](chal01wb.png)
 
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+The idea I had for solving this was to create an array within my function that would read via a decrementing if loop the input array assigning the reverse order of elements into my output array. 
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
+
+Not applicable to this Code Challenge
