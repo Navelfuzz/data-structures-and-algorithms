@@ -6,4 +6,5 @@ https://canvas.instructure.com/courses/7139363/assignments/38486996?module_item_
 ## Table of Contents
 
 Class 01: arrayReversal
-Class 02: arrayInsertShift
+Class 02: arrayInsertShift 
+Class 03: binarySearch
