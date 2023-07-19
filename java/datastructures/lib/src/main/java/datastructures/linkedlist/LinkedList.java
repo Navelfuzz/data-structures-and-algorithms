@@ -3,44 +3,89 @@ package datastructures.linkedlist;
 public class LinkedList {
     private Node head;
 
-    public LinkedList(){
+    public LinkedList() {
         this.head = null;
     }
 
-    public void insert(int value){
+    public void insert(int value) {
         Node newNode = new Node(value);
-        newNode.setNext(head);
+        newNode.next = head;
         head = newNode;
     }
 
-    public Node getHead() {
-        return head;
-    }
-
-    public boolean includes(int value){
+    public boolean includes(int value) {
         Node current = head;
-        while (current != null){
-            if (current.getValue() == value){
+        while (current != null) {
+            if (current.value == value) {
                 return true;
             }
-            current = current.getNext();
+            current = current.next;
         }
         return false;
     }
 
-
-    @Override
     public String toString() {
-        if (head == null) {
-            return "NULL";
-        }
-        StringBuilder sb = new StringBuilder();
+        StringBuilder result = new StringBuilder();
         Node current = head;
         while (current != null) {
-            sb.append("{ ").append(current.getValue()).append(" } -> ");
-            current = current.getNext();
+            result.append("{ ").append(current.value).append(" } -> ");
+            current = current.next;
         }
-        sb.append("NULL");
-        return sb.toString();
+        result.append("NULL");
+        return result.toString();
+    }
+
+    public void append(int value) {
+        Node newNode = new Node(value);
+        if (head == null) {
+            head = newNode;
+        } else {
+            Node current = head;
+            while (current.next != null) {
+                current = current.next;
+            }
+            current.next = newNode;
+        }
+    }
+
+    public void insertBefore(int value, int newValue) {
+        Node newNode = new Node(newValue);
+        if (head != null) {
+            if (head.value == value) {
+                newNode.next = head;
+                head = newNode;
+            } else {
+                Node current = head;
+                while (current.next != null && current.next.value != value) {
+                    current = current.next;
+                }
+                if (current.next != null) {
+                    newNode.next = current.next;
+                    current.next = newNode;
+                }
+            }
+        }
+    }
+
+    public void insertAfter(int value, int newValue) {
+        Node newNode = new Node(newValue);
+        Node current = head;
+        while (current != null && current.value != value) {
+            current = current.next;
+        }
+        if (current != null) {
+            newNode.next = current.next;
+            current.next = newNode;
+        }
+    }
+
+    private static class Node {
+        public int value; // Change the access modifier to public
+        private Node next;
+
+        public Node(int value) {
+            this.value = value;
+            this.next = null;
+        }
     }
 }
