@@ -54,3 +54,23 @@ Augmented the LinkedList class to add the following features:
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
+
+___
+# Code Challenge: Class 06: Linked List Implementation III
+
+## Whiteboard Process
+N/a
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+Augmented the LinkedList class to add the following features:
+* kth from end
+  * argument: a number, `k`, as a parameter
+  * Return the node's value that is `k` places from the tail of the linked list.
+  * You have access to the Node class and all the properties on the LL class as well as the methods created in prev. challenges.
+
+O(N) Time, O(1) Space
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
