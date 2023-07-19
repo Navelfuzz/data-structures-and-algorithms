@@ -32,3 +32,25 @@ Create a Node class that has properties for the value stored in the Node, and a 
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
+___
+# Code Challenge: Class 05: Linked List Implementation II
+
+## Whiteboard Process
+N/a
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+
+Augmented the LinkedList class to add the following features:
+* append
+  * arguments: new value
+  * adds a new node with the given value to the end of the list
+* insert before
+  * arguments: value, new value
+  * adds a new node with the given new value immediately before the first node that has the value specified
+* insert after
+  * arguments: value, new value
+  * adds a new node with the given new value immediately after the first node that has the value specified
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
