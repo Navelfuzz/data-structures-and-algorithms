@@ -12,3 +12,6 @@ CF 401 Java Code Challenge
 
 ### Binary Search
 []()
+
+### Linked List Implementation
+[Class 05: Linked List Implementation](https://canvas.instructure.com/courses/7139363/assignments/38487000?module_item_id=88052966)
