@@ -79,8 +79,35 @@ public class LinkedList {
         }
     }
 
+    public int kthFromEnd(int k) {
+        if (head == null || k < 0) {
+            throw new IllegalArgumentException("Invalid value of k");
+        }
+
+        Node slow = head;
+        Node fast = head;
+
+        for (int i = 0; i < k; i++) {
+            if (fast == null) {
+                throw new IllegalArgumentException("k is greater than the length of the linked list");
+            }
+            fast = fast.next;
+        }
+
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next;
+        }
+
+        if (fast == null) {
+            throw new IllegalArgumentException("k is greater than the length of the linked list");
+        }
+
+        return slow.value;
+    }
+
     private static class Node {
-        public int value; // Change the access modifier to public
+        public int value;
         private Node next;
 
         public Node(int value) {
