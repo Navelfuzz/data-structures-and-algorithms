@@ -24,10 +24,42 @@
 Instantiate these Stack objects in your PseudoQueue constructor.
 
 ## Whiteboard Process
-<!-- Embedded whiteboard image -->
-
+![pseudoWB](pseudoQWB.png)
 ## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+dequeue is O(N) everything else is O(1)
 
 ## Solution
-<!-- Show how to run your code, and examples of it in action -->
+```java
+public class PseudoQueue<T> {
+    private Stack<T> stackOne; // Renamed from stackPush
+    private Stack<T> stackTwo; // Renamed from stackPop
+
+    public PseudoQueue() {
+        stackOne = new Stack<>();
+        stackTwo = new Stack<>();
+    }
+
+    public void enqueue(T value) {
+        stackOne.push(value);
+    }
+
+    public T dequeue() {
+        if (stackTwo.isEmpty()) {
+            while (!stackOne.isEmpty()) {
+                stackTwo.push(stackOne.pop());
+            }
+        }
+        if (stackTwo.isEmpty()) {
+            throw new RuntimeException("Queue is empty");
+        }
+        return stackTwo.pop();
+    }
+
+    public boolean isEmpty() {
+        return stackOne.isEmpty() && stackTwo.isEmpty();
+    }
+
+    public int size() {
+        return stackOne.size() + stackTwo.size();
+    }
+```
