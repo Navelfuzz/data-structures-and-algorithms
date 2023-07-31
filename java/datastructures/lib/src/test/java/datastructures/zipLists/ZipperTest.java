@@ -3,7 +3,10 @@ package zipLists;
 import datastructures.linkedlist.Node;
 
 // Testing the zipLists function
-public static void main(String[] args) {
+
+
+public class ZipperTest {
+    public static void main(String[] args) {
         // Test case 1
         Node list1 = new Node(1);
         list1.setNext(new Node(3));
@@ -18,8 +21,9 @@ public static void main(String[] args) {
 
         // Print the zipped list
         while (zipperedList != null) {
-        System.out.print(zipperedList.getValue() + " ");
-        zipperedList = zipperedList.getNext();
+            System.out.print(zipperedList.getValue() + " ");
+            zipperedList = zipperedList.getNext();
         }
         // Output: 1 2 3 4 5 6
-        }
+    }
+}
