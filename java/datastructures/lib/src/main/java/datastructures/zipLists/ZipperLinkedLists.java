@@ -1,7 +1,5 @@
 package zipLists;
-
 import datastructures.linkedlist.Node;
-
 public class ZipperLinkedLists {
     public Node zipLists(Node list1, Node list2) {
         Node dummyHead = new Node(0);
@@ -32,10 +30,6 @@ public class ZipperLinkedLists {
         // Save the zipperedList
         Node zipperedList = dummyHead.getNext();
 
-        // No need to delete nodes from list1 and list2 as they are used directly from LinkedList
-
         return zipperedList;
     }
-
-
 }
