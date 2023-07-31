@@ -3,11 +3,10 @@ package datastructures.zipLists;
 import datastructures.linkedlist.Node;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-// Testing the zipLists function
-
 
 public class ZipperTest {
-    public static void main(String[] args) {
+    @Test
+    void testZipLists() {
         // Test case 1
         Node list1 = new Node(1);
         list1.setNext(new Node(3));
@@ -20,11 +19,13 @@ public class ZipperTest {
         ZipperLinkedLists zipperLinkedLists = new ZipperLinkedLists();
         Node zipperedList = zipperLinkedLists.zipLists(list1, list2);
 
-        // Print the zipped list
-        while (zipperedList != null) {
-            System.out.print(zipperedList.getValue() + " ");
+        // Create an array with the expected values of the zipped list
+        int[] expectedValues = {1, 2, 3, 4, 5, 6};
+
+        // Compare the zipped list with the expected values
+        for (int expectedValue : expectedValues) {
+            assertEquals(expectedValue, zipperedList.getValue());
             zipperedList = zipperedList.getNext();
         }
-        // Output: 1 2 3 4 5 6
     }
 }
