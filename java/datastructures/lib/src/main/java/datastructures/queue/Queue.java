@@ -1,3 +1,4 @@
+package datastructures.queue;
 
 import datastructures.linkedlist.Node;
 
