@@ -22,14 +22,13 @@ CF 401 Java Code Challenge
 ### Linked List Kth
 [Class 07: Linked List Extension II](https://canvas.instructure.com/courses/7139363/assignments/38487002?module_item_id=88052974)
 
+### Zip Two Linked Lists
+[Class 08: Zip Linked Lists](https://canvas.instructure.com/courses/7139363/assignments/38487003?module_item_id=88052978)
+
+###
+
+###
+
 ### Stack Queue Pseudo
 [Class 11: Stack Queue Pseudo](https://canvas.instructure.com/courses/7139363/assignments/38487007?module_item_id=88052992)
-
-###
-
-###
-
-###
-
-
 
