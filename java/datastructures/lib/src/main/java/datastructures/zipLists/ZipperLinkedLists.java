@@ -1,4 +1,3 @@
-package zipLists;
 import datastructures.linkedlist.Node;
 public class ZipperLinkedLists {
     public Node zipLists(Node list1, Node list2) {
