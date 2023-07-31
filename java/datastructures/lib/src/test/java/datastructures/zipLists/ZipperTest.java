@@ -1,7 +1,8 @@
 package zipLists;
 
 import datastructures.linkedlist.Node;
-
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.*;
 // Testing the zipLists function
 
 
