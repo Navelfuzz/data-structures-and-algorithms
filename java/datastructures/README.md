@@ -33,7 +33,7 @@ Create a Node class that has properties for the value stored in the Node, and a 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->
 ___
-# Code Challenge: Class 05: Linked List Implementation II
+# Code Challenge: Class 06: Linked List Implementation II
 
 ## Whiteboard Process
 N/a
@@ -56,7 +56,7 @@ Augmented the LinkedList class to add the following features:
 <!-- Show how to run your code, and examples of it in action -->
 
 ___
-# Code Challenge: Class 06: Linked List Implementation III
+# Code Challenge: Class 7: Linked List Implementation III - k-th value 
 
 ## Whiteboard Process
 N/a
@@ -71,6 +71,28 @@ Augmented the LinkedList class to add the following features:
   * You have access to the Node class and all the properties on the LL class as well as the methods created in prev. challenges.
 
 O(N) Time, O(1) Space
+
+## Solution
+<!-- Show how to run your code, and examples of it in action -->
+
+___
+# Code Challenge: Class 8: Zipping two linked lists
+
+Challenge Type: Code Challenge / Algorithm
+
+Feature Tasks
+* Write a function called zip lists
+* Arguments: 2 Linked Lists
+* Return: New Linked List, zipped as noted below
+* Zip the two linked lists together into one so that the nodes alternate between the two lists and return a reference to the zipped list.
+* Try and keep additional space down to O(1)
+* You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
+
+## Whiteboard Process
+<!-- Embedded whiteboard image -->
+
+## Approach & Efficiency
+<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
 
 ## Solution
 <!-- Show how to run your code, and examples of it in action -->

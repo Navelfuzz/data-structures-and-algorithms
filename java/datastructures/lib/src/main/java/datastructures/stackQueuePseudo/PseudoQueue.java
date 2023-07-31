@@ -32,3 +32,4 @@ public class PseudoQueue<T> {
     public int size() {
         return stackOne.size() + stackTwo.size();
     }
+}

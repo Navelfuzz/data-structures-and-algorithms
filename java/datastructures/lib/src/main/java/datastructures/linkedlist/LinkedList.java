@@ -9,17 +9,17 @@ public class LinkedList {
 
     public void insert(int value) {
         Node newNode = new Node(value);
-        newNode.next = head;
+        newNode.setNext(head);
         head = newNode;
     }
 
     public boolean includes(int value) {
         Node current = head;
         while (current != null) {
-            if (current.value == value) {
+            if (current.getValue() == value) {
                 return true;
             }
-            current = current.next;
+            current = current.getNext();
         }
         return false;
     }
@@ -28,8 +28,8 @@ public class LinkedList {
         StringBuilder result = new StringBuilder();
         Node current = head;
         while (current != null) {
-            result.append("{ ").append(current.value).append(" } -> ");
-            current = current.next;
+            result.append("{ ").append(current.getValue()).append(" } -> ");
+            current = current.getNext();
         }
         result.append("NULL");
         return result.toString();
@@ -41,27 +41,27 @@ public class LinkedList {
             head = newNode;
         } else {
             Node current = head;
-            while (current.next != null) {
-                current = current.next;
+            while (current.getNext() != null) {
+                current = current.getNext();
             }
-            current.next = newNode;
+            current.setNext(newNode);
         }
     }
 
     public void insertBefore(int value, int newValue) {
         Node newNode = new Node(newValue);
         if (head != null) {
-            if (head.value == value) {
-                newNode.next = head;
+            if (head.getValue() == value) {
+                newNode.setNext(head);
                 head = newNode;
             } else {
                 Node current = head;
-                while (current.next != null && current.next.value != value) {
-                    current = current.next;
+                while (current.getNext() != null && current.getNext().getValue() != value) {
+                    current = current.getNext();
                 }
-                if (current.next != null) {
-                    newNode.next = current.next;
-                    current.next = newNode;
+                if (current.getNext() != null) {
+                    newNode.setNext(current.getNext());
+                    current.setNext(newNode);
                 }
             }
         }
@@ -70,12 +70,12 @@ public class LinkedList {
     public void insertAfter(int value, int newValue) {
         Node newNode = new Node(newValue);
         Node current = head;
-        while (current != null && current.value != value) {
-            current = current.next;
+        while (current != null && current.getValue() != value) {
+            current = current.getNext();
         }
         if (current != null) {
-            newNode.next = current.next;
-            current.next = newNode;
+            newNode.setNext(current.getNext());
+            current.setNext(newNode);
         }
     }
 
@@ -91,28 +91,18 @@ public class LinkedList {
             if (fast == null) {
                 throw new IllegalArgumentException("k is greater than the length of the linked list");
             }
-            fast = fast.next;
+            fast = fast.getNext();
         }
 
-        while (fast != null && fast.next != null) {
-            slow = slow.next;
-            fast = fast.next;
+        while (fast != null && fast.getNext() != null) {
+            slow = slow.getNext();
+            fast = fast.getNext();
         }
 
         if (fast == null) {
             throw new IllegalArgumentException("k is greater than the length of the linked list");
         }
 
-        return slow.value;
-    }
-
-    private static class Node {
-        public int value;
-        private Node next;
-
-        public Node(int value) {
-            this.value = value;
-            this.next = null;
-        }
+        return slow.getValue();
     }
 }
