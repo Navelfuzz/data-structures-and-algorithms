@@ -25,9 +25,10 @@ CF 401 Java Code Challenge
 ### Zip Two Linked Lists
 [Class 08: Zip Linked Lists](https://canvas.instructure.com/courses/7139363/assignments/38487003?module_item_id=88052978)
 
-###
+### Code Challenge: Class 09 is a mock interview assignment
 
-###
+### Stack and Queue Implementation
+[Class 10: Stack and Queue Implementaiton](https://canvas.instructure.com/courses/7139363/assignments/38487006?module_item_id=88052987)
 
 ### Stack Queue Pseudo
 [Class 11: Stack Queue Pseudo](https://canvas.instructure.com/courses/7139363/assignments/38487007?module_item_id=88052992)
