@@ -88,11 +88,22 @@ Feature Tasks
 * Try and keep additional space down to O(1)
 * You have access to the Node class and all the properties on the Linked List class as well as the methods created in previous challenges.
 
-## Whiteboard Process
-<!-- Embedded whiteboard image -->
+___
+# Code Challenge: Class 10: Implementing Stack and Queue
+Using a Linked List as the underlying data storage mechanism, implement both a Stack and a Queue.
 
-## Approach & Efficiency
-<!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
+Feature Tasks: 
 
-## Solution
-<!-- Show how to run your code, and examples of it in action -->
+**Stack Data Structure Methods:**
+* pop()
+* peek()
+* push(T value)
+* isEmpty()
+
+**Queue Data Structure Methods:**
+* enqueue()
+* dequeue()
+* peek()
+* isEmpty()
+
+___
