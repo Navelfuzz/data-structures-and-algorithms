@@ -26,4 +26,18 @@ public class TreesTest {
         assertEquals("[2, 3, 4, 5, 6, 7, 8]", bst.inOrderTraversal().toString());
         assertEquals("[2, 4, 3, 6, 8, 7, 5]", bst.postOrderTraversal().toString());
     }
+
+    @Test
+    public void testFindMaximumValue() {
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.root = new Node(5);
+        binaryTree.root.left = new Node(3);
+        binaryTree.root.right = new Node(7);
+        binaryTree.root.left.left = new Node(2);
+        binaryTree.root.left.right = new Node(4);
+        binaryTree.root.right.left = new Node(6);
+        binaryTree.root.right.right = new Node(8);
+
+        assertEquals(8, binaryTree.findMaximumValue());
+    }
 }
