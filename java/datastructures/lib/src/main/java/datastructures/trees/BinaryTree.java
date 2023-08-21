@@ -52,4 +52,36 @@ public class BinaryTree {
         }
         return result;
     }
+
+    public int findMaximumValue() {
+        if (root == null) {
+            throw new IllegalStateException("Tree is empty");
+        }
+
+        return findMaximumValue(root);
+    }
+
+    private int findMaximumValue(Node node) {
+        if (node == null) {
+            return Integer.MIN_VALUE; // A very small value to start the comparison
+        }
+
+        int maxValue = node.value;
+        int leftMax = findMaximumValue(node.left);
+        int rightMax = findMaximumValue(node.right);
+
+        if (leftMax > maxValue) {
+            maxValue = leftMax;
+        }
+        if (rightMax > maxValue) {
+            maxValue = rightMax;
+        }
+
+        return maxValue;
+    }
+
+
+
+
+
 }
