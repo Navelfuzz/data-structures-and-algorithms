@@ -3,6 +3,8 @@ package datastructures.trees;
 // BinaryTree.java
 import java.util.ArrayList;
 import java.util.List;
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class BinaryTree {
     Node root;
@@ -80,6 +82,29 @@ public class BinaryTree {
         return maxValue;
     }
 
+    public List<Integer> breadthFirst() {
+        List<Integer> result = new ArrayList<>();
+        if (root == null) {
+            return result;
+        }
+
+        Queue<Node> queue = new LinkedList<>();
+        queue.offer(root);
+
+        while (!queue.isEmpty()) {
+            Node current = queue.poll();
+            result.add(current.value);
+
+            if (current.left != null) {
+                queue.offer(current.left);
+            }
+            if (current.right != null) {
+                queue.offer(current.right);
+            }
+        }
+
+        return result;
+    }
 
 
 

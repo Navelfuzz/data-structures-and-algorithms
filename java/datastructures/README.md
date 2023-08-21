@@ -176,3 +176,12 @@ Find the maximum value stored in the tree. You can assume that the values stored
 
 ___
 
+# Code Challenge: Class 17: Breadth First Traversal
+
+Feature Tasks
+
+Write a function called breadth first
+
+* Arguments: tree
+* Return: list of all values in the tree, in the order they were encountered
+* NOTE: Traverse the input tree using a Breadth-first approach

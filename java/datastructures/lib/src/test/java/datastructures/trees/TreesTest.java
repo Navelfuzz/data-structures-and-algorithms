@@ -1,7 +1,11 @@
 package datastructures.trees;
 
 // TreesTest.java
+
 import org.junit.jupiter.api.Test;
+
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TreesTest {
@@ -39,5 +43,20 @@ public class TreesTest {
         binaryTree.root.right.right = new Node(8);
 
         assertEquals(8, binaryTree.findMaximumValue());
+    }
+
+    @Test
+    public void testBreadthFirstTraversal() {
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.root = new Node(5);
+        binaryTree.root.left = new Node(3);
+        binaryTree.root.right = new Node(7);
+        binaryTree.root.left.left = new Node(2);
+        binaryTree.root.left.right = new Node(4);
+        binaryTree.root.right.left = new Node(6);
+        binaryTree.root.right.right = new Node(8);
+
+        List<Integer> expected = List.of(5, 3, 7, 2, 4, 6, 8);
+        assertEquals(expected, binaryTree.breadthFirst());
     }
 }
