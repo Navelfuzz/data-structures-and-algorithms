@@ -21,4 +21,4 @@
 O(1) for time and space. Implemented a Queue interface to a LinkedList because the added ease of functionality.
 
 ## Solution
-Run tests inside of AnimalShelterTest.java
+Run tests inside of AnimalShelterTest.java (lib/src/test/java/datastructures/animalShelter/AnimalShelterTest.java)
