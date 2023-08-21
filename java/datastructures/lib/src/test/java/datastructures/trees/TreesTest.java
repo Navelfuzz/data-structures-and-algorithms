@@ -1,7 +1,5 @@
 package datastructures.trees;
 
-// TreesTest.java
-
 import org.junit.jupiter.api.Test;
 
 import java.util.List;
@@ -56,7 +54,24 @@ public class TreesTest {
         binaryTree.root.right.left = new Node(6);
         binaryTree.root.right.right = new Node(8);
 
-        List<Integer> expected = List.of(5, 3, 7, 2, 4, 6, 8);
+        List<Object> expected = List.of(5, 3, 7, 2, 4, 6, 8);
         assertEquals(expected, binaryTree.breadthFirst());
     }
+
+    @Test
+    public void testFizzBuzzTree() {
+        BinaryTree binaryTree = new BinaryTree();
+        binaryTree.root = new Node(15);
+        binaryTree.root.left = new Node(3);
+        binaryTree.root.right = new Node(10);
+        binaryTree.root.left.left = new Node(9);
+        binaryTree.root.left.right = new Node(5);
+        binaryTree.root.right.left = new Node(7);
+        binaryTree.root.right.right = new Node(11);
+
+        BinaryTree fizzBuzzTree = binaryTree.fizzBuzzTree();
+        List<Object> expected = List.of("FizzBuzz", "Fizz", "Buzz", "Fizz", "Buzz", 7, 11);
+        assertEquals(expected, fizzBuzzTree.breadthFirst());
+    }
+
 }
