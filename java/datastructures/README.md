@@ -212,5 +212,6 @@ Write a blog post that demonstrates a visual step-through of the insertion sort 
 
 implement insertion sort for an array of numbers and add tests.
 
+InsertSortTest.java tests all functionality of the InsertSort class.
 ___
 
