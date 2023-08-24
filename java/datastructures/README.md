@@ -215,3 +215,15 @@ implement insertion sort for an array of numbers and add tests.
 InsertSortTest.java tests all functionality of the InsertSort class.
 ___
 
+# Code Challenge: Class 27: Merge Sort
+
+Feature Tasks
+
+Write a blog post that demonstrates a visual step-through of the merge sort algorithm
+
+implement merge sort for an array of numbers and add tests.
+
+MergeSortTest.java tests all functionality of the MergeSort class.
+___
+
+

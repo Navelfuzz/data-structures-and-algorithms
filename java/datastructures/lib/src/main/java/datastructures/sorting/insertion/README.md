@@ -48,7 +48,7 @@ LET sorted = New Empty Array
 * Few uniques: [5,12,7,5,5,7]
 * Nearly-sorted: [2,3,5,7,13,11]
 ___
-#### Trace of Insertion Sort on Array A:
+#### Trace of Insertion Sort on Unsorted Array:
 
 ```java
 [8,4,23,42,16,15]
