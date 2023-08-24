@@ -1,8 +1,30 @@
+# CF 401 Data Structures and Algorithms
+## Table of Contents
+##### Authored by Jonathon Stillson
+* [Code Challenge: Class 01: Reverse an Array](#code-challenge-class-01-reverse-an-array)
+* [Code Challenge: Class 02: Shift an Array](#code-challenge-class-02-shift-an-array)
+* [Code Challenge: Class 03: Array Binary Search](#code-challenge-class-03-array-binary-search)
+* [Code Challenge: Class 04: Linked List Implementation](#code-challenge-class-04-linked-list-implementation)
+* [Code Challenge: Class 05: Linked List Implementation](#code-challenge-class-05-linked-list-implementation)
+* [Code Challenge: Class 06: Linked List Implementation II](#code-challenge-class-06-linked-list-implementation-ii)
+* [Code Challenge: Class 7: Linked List Implementation III - k-th value](#code-challenge-class-7-linked-list-implementation-iii---k-th-value)
+* [Code Challenge: Class 8: Zipping two linked lists](#code-challenge-class-8-zipping-two-linked-lists)
+* [Code Challenge: Class 10: Implementing Stack and Queue](#code-challenge-class-10-implementing-stack-and-queue)
+* [Code Challenge: Class 12: First-in, First out Animal Shelter](#code-challenge-class-12-first-in-first-out-animal-shelter)
+* [Code Challenge: Class 13: Multi-bracket Validation](#code-challenge-class-13-multi-bracket-validation)
+* [Code Challenge: Class 15: Binary Tree and BST Implementation](#code-challenge-class-15-binary-tree-and-bst-implementation)
+* [Code Challenge: Class 16: Find Maximum Value in a Binary Tree](#code-challenge-class-16-find-maximum-value-in-a-binary-tree)
+* [Code Challenge: Class 17: Breadth First Traversal](#code-challenge-class-17-breadth-first-traversal)
+* [Code Challenge: Class 18: FizzBuzz Tree](#code-challenge-class-18-fizzbuzz-tree)
+* [Code Challenge: Class 26: Insertion Sort](#code-challenge-class-26-insertion-sort)
+* [Code Challenge: Class 27: Merge Sort](#code-challenge-class-27-merge-sort)
+* [Code Challenge: Class 28: Quick Sort](#code-challenge-class-28-quick-sort)
+* [Code Challenge: Class 30: Hash Table Implementation](#code-challenge-class-30-hash-table-implementation)
+
+___
+
 # Code Challenge: Class 05: Linked List Implementation
 Create a Node class and Linked List class
-
-## Whiteboard Process
-N/a
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -226,4 +248,48 @@ implement merge sort for an array of numbers and add tests.
 MergeSortTest.java tests all functionality of the MergeSort class.
 ___
 
+# Code Challenge: Class 28: Quick Sort
+
+Feature Tasks
+
+Write a blog post that demonstrates a visual step-through of the quick sort algorithm
+
+implement quick sort for an array of numbers and add tests.
+
+QuickSortTest.java tests all functionality of the QuickSort class.
+___
+
+# Code Challenge: Class 30: Hash Table Implementation
+
+Feature Tasks
+
+Implement a Hashtable with the following methods:
+
+* add
+  * Arguments: key, value
+  * Returns: nothing
+  * This method should hash the key, and add the key and value pair to the table, handling collisions as needed.
+* get
+  * Arguments: key
+  * Returns: Value associated with that key in the table
+* contains
+  * Arguments: key
+  * Returns: Boolean, indicating if the key exists in the table already.
+* hash
+  * Arguments: key
+  * Returns: Index in the collection for that key
+
+Structure and Testing
+
+* Utilize the Single-responsibility principle: any methods you write should be clean, reusable, abstract component parts to the whole challenge.
+
+* Write tests to prove the following functionality:
+  * Adding a key/value to your hashtable results in the value being in the data structure
+  * Retrieving based on a key returns the value stored
+  * Successfully returns null for a key that does not exist in the hashtable
+  * Successfully handle a collision within the hashtable
+  * Successfully retrieve a value from a bucket within the hashtable that has a collision
+  * Successfully hash a key to an in-range value
+
+___
 
