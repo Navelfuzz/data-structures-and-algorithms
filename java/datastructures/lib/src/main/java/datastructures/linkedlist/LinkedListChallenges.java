@@ -1,4 +1,4 @@
-package codechallenges.linkedlist;
+package datastructures.linkedlist;
 
 import datastructures.linkedlist.LinkedList;
 
