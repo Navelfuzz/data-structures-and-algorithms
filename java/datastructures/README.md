@@ -20,6 +20,10 @@
 * [Code Challenge: Class 27: Merge Sort](#code-challenge-class-27-merge-sort)
 * [Code Challenge: Class 28: Quick Sort](#code-challenge-class-28-quick-sort)
 * [Code Challenge: Class 30: Hash Table Implementation](#code-challenge-class-30-hash-table-implementation)
+* [Code Challenge: Class 31: Find the first repeated word in a book](#code-challenge-class-31-find-the-first-repeated-word-in-a-book)
+* [Code Challenge: Class 32: Find common values in 2 binary trees](#code-challenge-class-32-find-common-values-in-2-binary-trees)
+* [Code Challenge: Class 33: Implement a simplified LEFT JOIN for 2 Hashmaps](#code-challenge-class-33-implement-a-simplified-left-join-for-2-hashmaps)
+
 
 ___
 
@@ -293,3 +297,71 @@ Structure and Testing
 
 ___
 
+# Code Challenge: Class 31: Find the first repeated word in a book.
+
+Feature Tasks
+
+* Write a function that accepts a lengthy string parameter.
+* Arguments: String
+* Return: String
+ 
+Structure and Testing
+
+Utilize the Single-responsibility principle: any methods you write should be clean, reusable, abstract component parts
+to the whole challenge. You will be given feedback and marked down if you attempt to define a large, complex algorithm 
+in one function definition.
+
+Write at least three test assertions for each method that you define.
+
+Ensure your tests are passing before you submit your solution.
+
+___
+
+# Code Challenge: Class 32: Find common values in 2 binary trees.
+
+Specifications:
+
+* Read all of the following instructions carefully. Name things exactly as described.
+* Do all your work in a public repository (matching the example provided by your instructor) called data-structures-and-algorithms, with a well-formatted, detailed top-level README.md
+* Create a branch in your repository called tree-intersection
+* On your branch, create…
+  * Java: a folder named TreeIntersection which contains a file called TreeIntersection.java
+  
+* Include any language-specific configuration files required for this challenge to become an individual component, module, library, etc.
+  * *NOTE: You can find an example of this configuration for your course in your class lecture repository.*
+
+Feature Tasks
+
+* Write a function called tree_intersection that takes two binary tree parameters.
+* Using your hashmap implementation as part of your algorithm, return a set of values found in both trees.
+
+Structure and Testing
+
+Utilize the Single-responsibility principle: any methods you write should be clean, reusable, abstract component parts 
+to the whole challenge. You will be given feedback and marked down if you attempt to define a large, complex algorithm 
+in one function definition.
+
+Write at least three test assertions for each method that you define.
+
+Ensure your tests are passing before you submit your solution.
+
+___
+
+# Code Challenge: Class 33: Implement a simplified LEFT JOIN for 2 Hashmaps
+
+Feature Tasks
+
+Write a function the [LEFT JOINs](https://www.tutorialspoint.com/sql/sql-left-joins.htm) two hashmaps into a single data structure.
+
+* Write a function called left join
+* Arguments: two hash maps
+  * The first parameter is a hashmap that has word strings as keys, and a synonym of the key as values.
+  * The second parameter is a hashmap that has word strings as keys, and antonyms of the key as values.
+* Return: The returned data structure that holds the results is up to you. It doesn't need to exactly match the output below, so long as it achieves the LEFT JOIN logic.
+
+**NOTES:**
+* Combine the key and corresponding values (if they exist) into a new data structure according to LEFT JOIN logic
+* LEFT JOIN means all values in the first hashmap are returned, and if values exist in the "right" hashmap, they are appended to the result row. 
+* If no values exist in the right hashmap, then some flavor of NULL should be appended to the result row.
+
+___
