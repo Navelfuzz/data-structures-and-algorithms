@@ -2,7 +2,7 @@
 Implement a depth-first traversal on a graph.
 
 ## Whiteboard Process
-![]()
+![whiteboard](cc38.png)
 
 ## Approach & Efficiency
 The recursive method visits all the connected nodes from a starting point, and mark/track them as visited using a hashset, 
